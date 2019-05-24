@@ -156,6 +156,9 @@
 #    [101]* Dish remote 6.3
 # * Disabled by default, use -R n or -G
 
+# Exit immediately if a command exits with a non-zero status:
+set -e
+
 export LANG=C
 PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
 

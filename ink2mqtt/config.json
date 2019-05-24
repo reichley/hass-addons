@@ -1,8 +1,8 @@
 {
-  "name": "RTL_433 to MQTT Bridge",
-  "version": "0.2",
-  "slug": "rtl4332mqtt",
-  "description": "433MHz RF to MQTT Bridge based on RTL_SDR/RTL_433 for RTL2832U based DVB-T USB tuners",
+  "name": "ink to MQTT",
+  "version": "0.1",
+  "slug": "ink2mqtt",
+  "description": "BETA: Query network printer using Ink (http://ink.sourceforge.net/) and send ink levels via MQTT",
   "url": "https://github.com/james-fry/hassio-addons/tree/master/rtl4332mqtt",
   "startup": "before",
   "boot": "auto",
@@ -20,21 +20,15 @@
     "mqtt_host": "hassio.local",
     "mqtt_user": "",
     "mqtt_password": "",
-    "mqtt_topic": "homeassistant/sensor/currentcost",
-    "protocol": 100,
-    "frequency": 319500000,
-    "gain": 60,
-    "frequency_offset": 350
+    "printer_ip": "192.168.1.237",
+    "interval": 3600
   },
   "schema":
   {
     "mqtt_host": "str",
     "mqtt_user": "str",
     "mqtt_password": "str",
-    "mqtt_topic": "str",
-    "protocol": "int",
-    "frequency": "int",
-    "gain": "int",
-    "frequency_offset": "int"
+    "printer_ip": "str",
+    "interval": "int"
    }
 }

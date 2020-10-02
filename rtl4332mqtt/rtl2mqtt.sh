@@ -160,6 +160,7 @@
 set -e
 
 export LANG=C
+export LD_LIBRARY_PATH=/usr/local/lib64
 PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
 
 CONFIG_PATH=/data/options.json

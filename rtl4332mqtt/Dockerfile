@@ -40,18 +40,6 @@ RUN apk add --no-cache --virtual build-deps alpine-sdk cmake git libusb-dev && \
     apk add --no-cache libusb mosquitto-clients jq
 
 #
-# Install supervisord to restart rtl433 in case it crashes
-#
-WORKDIR /data
-
-RUN apk add --no-cache python3 && \
-    apk add --no-cache py-pip && \
-    pip install supervisor && \
-    mkdir -p /var/log/supervisor
-
-COPY supervisord.conf /etc/supervisord.conf
-
-#
 # Define an environment variable
 #
 # Use this variable when creating a container to specify the MQTT broker host.
@@ -60,7 +48,4 @@ ENV MQTT_USER="guest"
 ENV MQTT_PASS="guest"
 ENV MQTT_TOPIC="homeassistant/sensor/rtl433"
 
-CMD cd / && \
-    cp /config/rtl4332mqtt/rtl2mqtt.sh /rtl2mqtt.sh && \
-    chmod +x /rtl2mqtt.sh && \
-    supervisord -n -c "/etc/supervisord.conf"
+CMD cd / && cp /config/rtl4332mqtt/rtl2mqtt.sh /rtl2mqtt.sh && chmod +x /rtl2mqtt.sh && /rtl2mqtt.sh

@@ -1,3 +1,6 @@
+# RTL_433 2 MQTT hassio-addon
+(see folder above)
+
 # hassio-addons
 Repository for hass.io add-ons
 

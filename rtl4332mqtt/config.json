@@ -17,14 +17,14 @@
   ],
   "options":
   {
-    "mqtt_host": "homeassistant.local",
+    "mqtt_host": "<your mqtt broker ip>",
     "mqtt_user": "mosquitto",
     "mqtt_password": "mosquitto",
-    "mqtt_topic": "homeassistant/sensor/wx",
+    "mqtt_topic": "rtl_433",
     "protocol": 40,
     "frequency": 433920000,
-    "gain": 60,
-    "frequency_offset": 350
+    "gain": 0,
+    "frequency_offset": 250
   },
   "schema":
   {

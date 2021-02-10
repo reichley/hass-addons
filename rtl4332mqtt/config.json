@@ -7,7 +7,7 @@
   "startup": "before",
   "boot": "auto",
   "map": ["config:rw", "ssl"],
-  "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
+  "devices": ["/dev/bus/usb"],
   "host_network": "False",
   "arch": [
     "aarch64",

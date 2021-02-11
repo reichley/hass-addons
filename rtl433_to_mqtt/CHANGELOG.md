@@ -1,4 +1,7 @@
-# Changelog 
+# Changelog
+
+## 0.61
+- changed MQTT output from "id" to "model"
 
 ## 0.60
 - cleaned up and renamed repository

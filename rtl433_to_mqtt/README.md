@@ -16,8 +16,10 @@ An add-on for a software defined radio tuned to listen for 433MHz (or similar) R
 
 3) Start the addon
 
+** To discover mqtt messages try: ```mosquitto_sub -t "$mqtt_topic/#" -h $mqtt_host -u $mqtt_user -P $mqtt_password -d``` **
 
-## Sample MQTT Data from Acurite 5n1 Weather Station
+
+### Sample MQTT Data from Acurite 5n1 Weather Station
 ```
 Client mosq-xRs3nBy7zc9kYCkWDP received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurite-5n1/1776/time', ... (19 bytes))
 2020-10-04 17:44:39
@@ -25,8 +27,6 @@ Client mosq-xRs3nBy7zc9kYCkWDP received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurit
 1776
 Client mosq-xRs3nBy7zc9kYCkWDP received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurite-5n1/1776/channel', ... (1 bytes))
 C
-Client mosq-xRs3nBy7zc9kYCkWDP received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurite-5n1/1776/sequence_num', ... (1 bytes))
-2
 Client mosq-xRs3nBy7zc9kYCkWDP received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurite-5n1/1776/battery_ok', ... (1 bytes))
 0
 Client mosq-xRs3nBy7zc9kYCkWDP received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurite-5n1/1776/wind_avg_km_h', ... (1 bytes))
@@ -39,8 +39,6 @@ Client mosq-Vy7IW8bKNOuh844X7v received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurit
 99
 Client mosq-xRs3nBy7zc9kYCkWDP received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurite-5n1/1776/rain_in', ... (5 bytes))
 15.54
-Client mosq-xRs3nBy7zc9kYCkWDP received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurite-5n1/1776/mic', ... (8 bytes))
-CHECKSUM
 ```
 
 ## Hardware

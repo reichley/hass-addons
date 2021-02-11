@@ -1,4 +1,4 @@
-# RTL433 to MQTT Bridge hass.io addon
+# RTL433 to MQTT hass.io addon
 A hass.io addon for a software defined radio tuned to listen for 433MHz RF transmissions and republish the data via MQTT
 
 This hass.io addon is based on Chris Kacerguis' project here: https://github.com/chriskacerguis/honeywell2mqtt,
@@ -15,16 +15,15 @@ which is based on James Fry's project here: https://github.com/james-fry/hassio-
 - mqtt_password
 - mqtt_topic
 - protocol (see https://github.com/merbanan/rtl_433 for more details inc protocol IDs)
+- retain
+- frequency
+- gain
+- frequency_offset
 
-3) Copy rtl2mqtt.sh to your hass.io config dir in a subdir called rtl4332mqtt.
-i.e.
-.../config/rtl4332mqtt/rtl2mqtt.sh
-This allows you to edit the start script if you need to make any changes
-
-4) Start the addon
+3) Start the addon
 
 
-## MQTT Data
+## Sample MQTT Data from Acurite 5n1 Weather Station
 ```
 Client mosq-xRs3nBy7zc9kYCkWDP received PUBLISH (d0, q0, r0, m0, 'rtl_433/Acurite-5n1/1776/time', ... (19 bytes))
 2020-10-04 17:44:39
@@ -66,17 +65,3 @@ James:
 Me:
 - Acurite 5-in-1 https://www.acurite.com/shop-all/weather-instruments/weather-sensors-and-parts/sensors/5-in-1-pro-weather-sensor-temperature-humidity-rainfall-wind-speed-wind-direction-06014rm.html
 - $25-30 (costlier than cheap USB dongles but better quality) https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/
-
-## Troubleshooting
-
-If you see this error:
-
-> Kernel driver is active, or device is claimed by second instance of librtlsdr.
-> In the first case, please either detach or blacklist the kernel module
-> (dvb_usb_rtl28xxu), or enable automatic detaching at compile time.
-
-Then run the following command on the host
-
-```bash
-sudo rmmod dvb_usb_rtl28xxu rtl2832
-```

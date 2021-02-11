@@ -1,0 +1,37 @@
+{
+  "name": "RTL_433 to MQTT",
+  "version": "0.57",
+  "slug": "rtl433_to_mqtt",
+  "description": "433MHz RF to MQTT (based on RTL_433) utilizing RTL2832U (or similar) DVB-T USB tuners",
+  "url": "https://github.com/reichley/hassio-addons/tree/master/rtl433_to_mqtt",
+  "arch": [ "aarch64", "amd64", "armv7", "i386" ],
+  "startup": "application",
+  "boot": "auto",
+  "usb": "true",
+
+  "options":
+  {
+    "mqtt_host": "mqtt broker ip",
+    "mqtt_user": "mqtt user",
+    "mqtt_password": "mqtt password",
+    "mqtt_topic": "rtl_433",
+    "protocol": 40,
+    "retain": 1,
+    "frequency": 433920000,
+    "gain": 0,
+    "frequency_offset": 250
+  },
+
+  "schema":
+  {
+    "mqtt_host": "str",
+    "mqtt_user": "str",
+    "mqtt_password": "str",
+    "mqtt_topic": "str",
+    "protocol": "int",
+    "retain": "int",
+    "frequency": "int",
+    "gain": "int",
+    "frequency_offset": "int"
+   }
+}

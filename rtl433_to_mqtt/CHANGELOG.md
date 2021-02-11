@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.62
+-  appended "id" to MQTT command
+
 ## 0.61
 - changed MQTT output from "id" to "model"
 

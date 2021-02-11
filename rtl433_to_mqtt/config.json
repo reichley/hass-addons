@@ -1,6 +1,6 @@
 {
   "name": "RTL_433 to MQTT",
-  "version": "0.60",
+  "version": "0.61",
   "slug": "rtl433_to_mqtt",
   "description": "433MHz RF to MQTT using RTL-SDR USB",
   "panel_icon": "mdi:antenna",

@@ -1,9 +1,8 @@
 {
   "name": "RTL_433 to MQTT",
-  "version": "0.61",
+  "version": "0.62",
   "slug": "rtl433_to_mqtt",
   "description": "433MHz RF to MQTT using RTL-SDR USB",
-  "panel_icon": "mdi:antenna",
   "url": "https://github.com/reichley/homeassistant-addons/tree/master/rtl433_to_mqtt",
   "arch": [ "aarch64", "amd64", "armv7", "i386" ],
   "startup": "application",

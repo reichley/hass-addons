@@ -16,4 +16,4 @@ echo ""
 
 set -x
 
-/usr/local/bin/rtl_433 -M newmodel -R $PROTOCOL -F "mqtt://$MQTT_HOST:1883,user=$MQTT_USER,pass=$MQTT_PASSWORD,retain=$RETAIN,devices=$MQTT_TOPIC[/model]"
+/usr/local/bin/rtl_433 -M newmodel -R $PROTOCOL -F "mqtt://$MQTT_HOST:1883,user=$MQTT_USER,pass=$MQTT_PASSWORD,retain=$RETAIN,devices=$MQTT_TOPIC[/model][/id]"

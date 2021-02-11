@@ -16,7 +16,7 @@ An add-on for a software defined radio tuned to listen for 433MHz (or similar) R
 
 3) Start the addon
 
-** To discover mqtt messages try: ```mosquitto_sub -t "$mqtt_topic/#" -h $mqtt_host -u $mqtt_user -P $mqtt_password -d``` **
+**To discover mqtt messages try: ```mosquitto_sub -t "$mqtt_topic/#" -h $mqtt_host -u $mqtt_user -P $mqtt_password -d```**
 
 
 ### Sample MQTT Data from Acurite 5n1 Weather Station

@@ -1,9 +1,5 @@
-# RTL433 to MQTT hass.io addon
-A hass.io addon for a software defined radio tuned to listen for 433MHz RF transmissions and republish the data via MQTT
-
-This hass.io addon is based on Chris Kacerguis' project here: https://github.com/chriskacerguis/honeywell2mqtt,
-which is in turn based on Marco Verleun's rtl2mqtt image here: https://github.com/roflmao/rtl2mqtt,
-which is based on James Fry's project here: https://github.com/james-fry/hassio-addons/tree/master/rtl4332mqtt
+# RTL433 to MQTT Home Assistant add-on
+An add-on for a software defined radio tuned to listen for 433MHz (or similar) RF transmissions and republish the data via MQTT
 
 ## Usage
 
@@ -16,9 +12,7 @@ which is based on James Fry's project here: https://github.com/james-fry/hassio-
 - mqtt_topic
 - protocol (see https://github.com/merbanan/rtl_433 for more details inc protocol IDs)
 - retain
-- frequency
-- gain
-- frequency_offset
+
 
 3) Start the addon
 
@@ -50,18 +44,5 @@ CHECKSUM
 ```
 
 ## Hardware
-
-This has been tested and used with the following hardware (you can get it on Amazon)
-
-Chris:
-- Honeywell Ademco 5818MNL Recessed Door Transmitter
-- 5800MINI Wireless Door/Window Contact by Honeywell
-- NooElec NESDR Nano 2+ Tiny Black RTL-SDR USB
-
-James:
-- CurrentCost TX: http://www.ebay.co.uk/itm/Current-Cost-Envi-R-Energy-Monitor-Smart-Electric-Meter-/152084708754
-- Super cheap RTL dongle: http://www.ebay.co.uk/itm/Mini-USB-DVB-T-RTL-SDR-Realtek-RTL2832U-R820T-Stick-Receiver-Dongle-MCX-Input-PK/222637370515
-
-Me:
 - Acurite 5-in-1 https://www.acurite.com/shop-all/weather-instruments/weather-sensors-and-parts/sensors/5-in-1-pro-weather-sensor-temperature-humidity-rainfall-wind-speed-wind-direction-06014rm.html
 - $25-30 (costlier than cheap USB dongles but better quality) https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/

@@ -1,5 +1,5 @@
 {
-  "name": "hassio add-on repository by Nick Reichley",
-  "url": "https://github.com/reichley/hassio-addons",
+  "name": "Reichley's HA Add-Ons",
+  "url": "https://github.com/reichley/homeassistant-addons",
   "maintainer": "Nick Reichley"
 }

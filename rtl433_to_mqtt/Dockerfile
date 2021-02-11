@@ -37,5 +37,3 @@ COPY run.sh /
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
-
-# CMD cd / && cp /config/rtl4332mqtt/rtl2mqtt.sh /rtl2mqtt.sh && chmod +x /rtl2mqtt.sh && /rtl2mqtt.sh

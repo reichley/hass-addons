@@ -1,7 +1,12 @@
 # Changelog
 
+## 0.63
+- removed old flag on MQTT command
+- standardized sensor reporting with ```-C si``` flag
+- added credit to README
+
 ## 0.62
--  appended "id" to MQTT command
+- appended "id" to MQTT command
 
 ## 0.61
 - changed MQTT output from "id" to "model"

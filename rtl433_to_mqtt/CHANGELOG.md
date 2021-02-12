@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.71.0
+- autobuild attempt #1
+
 ## 0.70.0
 - update release numbering (preparing for auto build)
 

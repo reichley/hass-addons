@@ -23,5 +23,5 @@ jobs:
         args: |
           --all \
           --target rtl433_to_mqtt \
-          --image rtl433tomqtt \
+          --image rtl433_to_mqtt \
           --docker-hub reichley

@@ -5,7 +5,7 @@
   "description": "433MHz RF to MQTT using RTL-SDR USB",
   "url": "https://github.com/reichley/hass-addons/tree/master/rtl433_to_mqtt",
   "arch": [ "aarch64", "amd64", "armv7", "i386", "armhf" ],
-  "image": "reichley/rtl433_to_mqtt_{arch}:latest",
+  "image": "reichley/rtl433_to_mqtt_{{arch}}:latest",
   "startup": "application",
   "boot": "auto",
   "usb": "true",

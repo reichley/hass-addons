@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.71.2
+- autobuild attempt #3
+
 ## 0.71.1
 - autobuild attempt #2
 

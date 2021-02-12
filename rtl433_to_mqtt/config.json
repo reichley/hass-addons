@@ -5,7 +5,7 @@
   "description": "433MHz RF to MQTT using RTL-SDR USB",
   "url": "https://github.com/reichley/homeassistant-addons/tree/master/rtl433_to_mqtt",
   "arch": [ "amd64" ],
-  "image": "reichley/image-{arch}-rtl433_to_mqtt",
+  "image": "reichley/rtl433_to_mqtt_{arch}:latest",
   "startup": "application",
   "boot": "auto",
   "usb": "true",

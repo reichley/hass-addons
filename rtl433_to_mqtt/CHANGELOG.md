@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.70.0
+- update release numbering (preparing for auto build)
+
 ## 0.63
 - removed old flag on MQTT command
 - standardized sensor reporting with ```-C si``` flag

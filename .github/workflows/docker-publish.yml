@@ -32,7 +32,7 @@ jobs:
             docker-compose --file docker-compose.test.yml build
             docker-compose --file docker-compose.test.yml run sut
           else
-            docker build . --file Dockerfile
+            docker build rtl433_to_mqtt --file Dockerfile
           fi
 
   # Push image to GitHub Packages.

@@ -16,4 +16,3 @@ jobs:
           --test \
           --all \
           --target rtl433_to_mqtt \
-          --docker-hub reichley/rtl433_to_mqtt

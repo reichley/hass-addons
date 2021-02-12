@@ -1,7 +1,7 @@
 # Changelog
 
-## 0.71.4
-- autobuild attempt #5
+## 0.71.5
+- ready for add-on store
 
 ## 0.70.0
 - update release numbering (preparing for auto build)

@@ -1,13 +1,7 @@
 # Changelog
 
-## 0.71.2
-- autobuild attempt #3
-
-## 0.71.1
-- autobuild attempt #2
-
-## 0.71.0
-- autobuild attempt #1
+## 0.71.3
+- autobuild attempt #4
 
 ## 0.70.0
 - update release numbering (preparing for auto build)

@@ -1,6 +1,6 @@
 {
   "name": "rtl_433 USB to MQTT",
-  "version": "0.72.0",
+  "version": "0.72.1",
   "slug": "rtl433_usb_to_mqtt",
   "image": "reichley/rtl433_usb_to_mqtt_{arch}",
   "description": "433MHz RTL-SDR (USB) to MQTT",

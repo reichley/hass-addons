@@ -1,5 +1,5 @@
-# RTL433 to MQTT Home Assistant add-on
-An add-on for a software defined radio tuned to listen for 433MHz (or similar) RF transmissions and republish the data via MQTT
+# rtl_433 USB to MQTT Home Assistant add-on
+An add-on for a RTL-SDR USB stick tuned to listen for 433MHz (or similar) RF transmissions and republish the data via MQTT
 
 ## Usage
 
@@ -9,9 +9,9 @@ An add-on for a software defined radio tuned to listen for 433MHz (or similar) R
 - mqtt_host
 - mqtt_user
 - mqtt_password
-- mqtt_topic
+- mqtt_topic (or leave rtl_433)
 - protocol (see https://github.com/merbanan/rtl_433 for more details inc protocol IDs)
-- retain
+- retain (set to 1)
 
 
 3) Start the addon
